@@ -17,6 +17,9 @@ setupSwagger(app);
 app.get('/', (req, res) => {
   res.send('Hello world');
 });
+app.get("/me",(req,res)=>{
+  res.send("welcome");
+})
 
 // API Routes
 app.use('/api/candidates', candidateRoutes);
